@@ -53,13 +53,25 @@
   min-width: 90px; /* Fixes issue where width is not respected */
 }
 
-.memberbox .social a {
+.social a, .social .clickable {
   font-size: 1.5rem;
   color: {{ .Get "body_text" }};
 }
 
-.memberbox .social a:hover {
-  color: {{ .Get "accent" }}
+.social a:hover, .social .clickable:hover {
+  color: {{ .Get "accent" }} !important;
+}
+
+.social .fab:not(.fa-square):not(.fa-circle)::before,
+.social .fab:not(.fa-square):not(.fa-circle)::before,
+.social .fab:not(.fa-square):not(.fa-circle)::before {
+  color: {{ .Get "main_bg" }};
+}
+
+.social .fab:not(.fa-square):not(.fa-circle):hover::before,
+.social .fab:not(.fa-square):not(.fa-circle):hover::before,
+.social .fab:not(.fa-square):not(.fa-circle):hover::before {
+  color: {{ .Get "header_text" }};
 }
 
 /* Widgets -- Patreon */
@@ -79,6 +91,8 @@
   background-color: {{ .Get "alt_bg" }};
   color: {{ .Get "alt_body_text" }};
   border: none;
+  /* Fixes Safari not applying styles */
+  -webkit-appearance: textfield;
 }
 
 #search-results {

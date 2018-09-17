@@ -1,6 +1,6 @@
 [params]
-
-[params.color]
+[params.BluestNight]
+[params.BluestNight.color]
     page_background = "#000000"
     main_background = "#050505"
     alt_background = "#252525"
@@ -9,29 +9,42 @@
     accent = "#2c8cef"
     accent_text = "#e2e2e2"
 
-[params.fonts]
+[params.BluestNight.fonts]
     header_style = "sans-serif"
     body_style = "sans-serif"
     print_header_style = "sans-serif"
     print_body_style = "serif"
 
-[params.sidebar]
-    [params.sidebar.patreon]
-        path = "widgets/patreon.html"
+[params.BluestNight.shortcodes]
+    [params.BluestNight.shortcodes.katex]
+        css = "shortcodes/katex/head.html"
+        js  = "shortcodes/katex/foot.html"
+    [params.BluestNight.shortcodes.tabgroup]
+        js  = "shortcodes/tabgroup/js.html"
+
+[params.BluestNight.sidebar]
+    [params.BluestNight.sidebar.categories]
+        path = "sidebar/widgets/categories/widget.html"
         cache = true
-    [params.sidebar.search]
-        path = "widgets/search.html"
+    [params.BluestNight.sidebar.events]
+        path = "sidebar/widgets/events/widget.html"
         cache = true
-    [params.sidebar.recent]
-        path = "widgets/recent.html"
-    [params.sidebar.events]
-        path = "widgets/events.html"
+    [params.BluestNight.sidebar.patreon]
+        path = "sidebar/widgets/patreon/widget.html"
         cache = true
-    [params.sidebar.categories]
-        path = "widgets/categories.html"
+    [params.BluestNight.sidebar.recent]
+        path = "sidebar/widgets/recent/widget.html"
+    [params.BluestNight.sidebar.search]
+        path = "sidebar/widgets/search/widget.html"
+        js = "sidebar/widgets/search/js.html"
+        css = "sidebar/widgets/search/css.html"
         cache = true
-    [params.sidebar.taglist]
-        path = "widgets/taglist.html"
+    [params.BluestNight.sidebar.support]
+        path = "sidebar/widgets/support/widget.html"
+        js = "sidebar/widgets/support/js.html"
+        cache = true
+    [params.BluestNight.sidebar.taglist]
+        path = "sidebar/widgets/taglist/widget.html"
         cache = true
 
 [mediaTypes]

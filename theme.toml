@@ -1,10 +1,32 @@
 name = "BluestNight"
 license = "MIT"
-licenselink = "https://gitlab.com/BluestNight/BluestNight/blob/master/LICENSE.md"
+licenselink = "https://dev.shadow53.com/source/BluestNight/browse/master/LICENSE.md"
 description = "A featureful, configurable, yet sleek dark theme for Hugo."
-homepage = "https://bluestnight.shadow53.com/"
-tags = ["Blog", "Contact Form", "Custom Colors", "Dark", "Error Validation", "Font Awesome", "Netlify", "Responsive", "Syntax Highlighting", "Search", "Widgets", "Writing"]
-min_version = 0.30
+homepage = "https://bluestnight.com/"
+min_version = 0.40.3
+tags = [
+    "Blog",
+    "Clean",
+    "Creative",
+    "Custom Colors",
+    "Dark",
+    "Extensible",
+    "Mobile Friendly",
+    "Netlify",
+    "Widgets",
+    "Writing"
+]
+features = [
+    "Contact Form",
+    "Error Validation",
+    "Extensible",
+    "Flexbox",
+    "Font Awesome",
+    "Print CSS",
+    "Responsive",
+    "Search",
+    "Syntax Highlighting",
+]
 
 [author]
   name = "Michael Bryant"
